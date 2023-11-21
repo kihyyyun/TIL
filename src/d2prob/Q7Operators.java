@@ -13,5 +13,6 @@ public class Q7Operators {
         message = dust >=80 ? "좋음" :"나쁨";
         System.out.println(String.format("미세먼지 수치: %d, (%s)",dust, message));
         System.out.println(message);
+        //
     }
 }
