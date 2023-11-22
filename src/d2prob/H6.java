@@ -12,9 +12,9 @@ public class H6 {
 
         Scanner scanner =new Scanner(System.in);
         double temp = scanner.nextDouble();
-        boolean go = temp > 38 || temp < 36;
+        boolean go = temp <= 36 || temp >=38;
 
-        System.out.println("병원가야할까? : "+ go);
+        System.out.println(go);
 
 
     }

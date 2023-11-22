@@ -12,8 +12,9 @@ public class H4 {
         int A = scanner.nextInt();
         int B = scanner.nextInt();
 
-        boolean result = A % B == 0 ? true : false;
-
-        System.out.println(result);
+//        boolean result = A % B == 0 ? true : false;
+//
+//        System.out.println(result);
+        System.out.println(A % B == 0);
     }
 }

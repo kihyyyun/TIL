@@ -2,7 +2,7 @@ package d2prob;
 
 import java.util.Scanner;
 
-public class H5 {
+public class H5_false {
     public static void main(String[] args) {
         //H5
         //Scanner 이외의 변수를 한개만 선언하여
@@ -13,8 +13,39 @@ public class H5 {
         System.out.println("정수 A를 입력하세요 : ");
         long A = scanner.nextLong();
 
-        System.out.println((A*A) % 10);
-        System.out.println((A*A*A*A)% 10);
-        System.out.println((A*A*A*A*A*A)% 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        System.out.println((A*A) % 10);
+//        System.out.println((A*A*A*A)% 10);
+//        System.out.println((A*A*A*A*A*A)% 10);
+        A *= A;
+        A %= 10;
+        System.out.println(A);
+        A *= A;
+        A %=10;
+        System.out.println(A);
+        A *= A;
+        A %=10;
+        System.out.println(A);
     }
 }
