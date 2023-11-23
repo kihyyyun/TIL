@@ -13,18 +13,53 @@ public class H3 {
         //센티미터는 해당 길이의 인치로, 인치는 해당 길이의 센티미터로 소수점 2째 자리까지 출력하여라.
         //
         Scanner scanner = new Scanner(System.in);
-        int a =scanner.nextInt();
-        int b =scanner.nextInt();
 
-        if(a == 0){
-            double cm = b * 2.54;
-            System.out.print(b+" inch = ");
-            System.out.printf( "%.2fcm",cm );
-        }else if(a == 1){
-            System.out.print(b+" cm = ");
-            System.out.printf("%.2f inch", b/ 2.54);
-        }else {
-            System.out.println("첫번째 자리에 0 or 1만 입력하세요");
+        //첫번째 정수는 단위
+        int unit = scanner.nextInt();
+        //두번쨰 정수는 길이
+        int length =scanner.nextInt();
+        //cm-> inch :/ 2.54;
+        if (unit== 0){
+            System.out.println(String.format("%.2finch", length/2.54));
         }
+        //inch ->cm :*2.54
+        else {
+            System.out.println(String.format("%.2fcm", length*2.54));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        int a =scanner.nextInt();
+//        int b =scanner.nextInt();
+//
+//        if(a == 0){
+//            double cm = b * 2.54;
+//            System.out.print(b+" inch = ");
+//            System.out.printf( "%.2fcm",cm );
+//        }else if(a == 1){
+//            System.out.print(b+" cm = ");
+//            System.out.printf("%.2f inch", b/ 2.54);
+//        }else {
+//            System.out.println("첫번째 자리에 0 or 1만 입력하세요");
+//        }
     }
 }
