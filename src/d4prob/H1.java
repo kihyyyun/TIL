@@ -16,11 +16,11 @@ public class H1 {
     //
 
     public static int dustcheck (int dust){
-        if(dust >=0 && dust <=30){
+        if( dust <=30){
             System.out.println("좋음");
-        } else if (dust>31 && dust <80) {
+        } else if ( dust <80) {
             System.out.println("보통");
-        } else if (dust > 80 && dust < 150){
+        } else if ( dust < 150){
             System.out.println("나쁨");
         }else {
             System.out.println("매우 나쁨");

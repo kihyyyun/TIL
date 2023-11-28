@@ -13,19 +13,56 @@ public class H2 {
     //단, 입력이 0 <= n <= 127 를 벗어나면 -1을 반환하시오.
     //
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(timeAlert(scanner.nextInt()));
+
+    public static int whatNum(int n){
+
+        if(n<0 || n> 127){
+            return -1;
+        }
+
+        int now = 7;
+
+        //몇시간이 지난다
+        now += n;
+        return now % 12 == 0 ? 12 : now % 12;
 
     }
-    public static int timeAlert (int n) {
-        int current = 7;
-        int a = (current + n)% 12;
-        if (!(0<= n && n < 127)){
-            return -1;
-        }else if(a == 0){
-                a =12;
-        }
-        return a;
+
+    public static void main(String[] args) {
+        System.out.println(whatNum(128));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println(timeAlert(scanner.nextInt()));
+//
+//    }
+//    public static int timeAlert (int n) {
+//        int current = 7;
+//        int a = (current + n)% 12;
+//        if (!(0<= n && n < 127)){
+//            return -1;
+//        }else if(a == 0){
+//                a =12;
+//        }
+//        return a;
+//    }
+//}
