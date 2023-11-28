@@ -8,7 +8,7 @@ package d6;
 public abstract class Person implements Comparable{
     private String name;
     private int age;
-    public Person(String name, int age){
+    public Person(String name){
         this.name =name;
         this.age =age;
     }

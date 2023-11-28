@@ -4,7 +4,7 @@ public class Main {
 
         public static void main(String[] args) {
 //        Person alex = new Person("Alex", 25);
-            Person alex = new Student("Alex", 25, "CSE");
+            Person alex = new Student();
             Person alex3 =new Lecturer(
                     "Alex",25,"korean"
             );
