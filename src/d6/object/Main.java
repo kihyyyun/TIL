@@ -25,6 +25,6 @@ public class Main {
         }
 
     public static void  printPerson(){
-
+            //수동으로 예외를 발생시키고 싶다.
     }
 }
